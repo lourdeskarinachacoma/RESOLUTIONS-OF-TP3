@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class VectoresUsuario {
+    public static void main(String[] args) {
+        // Crear Scanner para la entrada de usuario
+        Scanner scanner = new Scanner(System.in);
+
+        // Crear vectores de tipo entero y String con 10 posiciones
+        int[] vectorEntero = new int[10];
+        String[] vectorString = new String[10];
+
+        // Obtener datos del usuario para el vector de enteros
+        System.out.println("Ingrese 10 valores enteros para el primer vector:");
+        for (int i = 0; i < 10; i++) {
+            System.out.print("Ingrese el valor en la posición " + i + ": ");
+            vectorEntero[i] = scanner.nextInt();
+        }
+
+        // Limpiar el buffer del scanner después de leer enteros
+        scanner.nextLine();
+
+        // Obtener datos del usuario para el vector de Strings
+        System.out.println("Ingrese 10 valores de texto para el segundo vector:");
+        for (int i = 0; i < 10; i++) {
+            System.out.print("Ingrese el valor en la posición " + i + ": ");
+            vectorString[i] = scanner.nextLine();
+        }
+
+        // Cerrar el scanner
+        scanner.close();
+
+        // Mostrar los vectores
+        System.out.println("\nValores en el vector de enteros:");
+        for (int i = 0; i < 10; i++) {
+            System.out.print(vectorEntero[i] + " ");
+        }
+
+        System.out.println("\nValores en el vector de Strings:");
+        for (int i = 0; i < 10; i++) {
+            System.out.print(vectorString[i] + " ");
+        }
+    }
+}

@@ -1,0 +1,15 @@
+public class SumaVector {
+    public static void main(String[] args) {
+        // Crear un vector de 5 posiciones
+        int[] vector = {2, 4, 6, 8, 10};
+
+        // Calcular la suma de los elementos del vector
+        int suma = 0;
+        for (int i = 0; i < vector.length; i++) {
+            suma += vector[i];
+        }
+
+        // Imprimir la suma
+        System.out.println("La suma de los elementos del vector es: " + suma);
+    }
+}

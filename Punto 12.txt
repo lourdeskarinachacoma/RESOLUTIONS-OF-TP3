@@ -1,0 +1,20 @@
+import java.util.LinkedList;
+
+public class ListaEnlazada {
+    public static void main(String[] args) {
+        // Crear una lista enlazada
+        LinkedList<String> listaEnlazada = new LinkedList<>();
+
+        // Agregar 10 elementos a la lista
+        for (int i = 1; i <= 10; i++) {
+            listaEnlazada.add("Elemento " + i);
+        }
+
+        // Imprimir la lista por consola
+        System.out.println("Lista enlazada:");
+
+        for (String elemento : listaEnlazada) {
+            System.out.println(elemento);
+        }
+    }
+}

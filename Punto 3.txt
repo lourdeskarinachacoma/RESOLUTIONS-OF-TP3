@@ -1,0 +1,12 @@
+public class VectorPalabras {
+    public static void main(String[] args) {
+        // Crear un vector para almacenar cada palabra de la frase
+        String[] palabras = {"Estoy", "cursando", "el", "segundo", "año", "de", "mi", "carrera"};
+
+        // Mostrar el mensaje por pantalla
+        System.out.print("Mensaje: ");
+        for (String palabra : palabras) {
+            System.out.print(palabra + " ");
+        }
+    }
+}

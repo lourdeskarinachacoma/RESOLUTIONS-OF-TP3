@@ -1,0 +1,24 @@
+import java.util.Stack;
+
+public class PilaEjemplo {
+    public static void main(String[] args) {
+        // Crear una pila
+        Stack<Integer> pila = new Stack<>();
+
+        // Agregar 7 elementos a la pila
+        for (int i = 1; i <= 7; i++) {
+            pila.push(i);
+        }
+
+        // Agregar 3 elementos más a la pila
+        for (int i = 8; i <= 10; i++) {
+            pila.push(i);
+        }
+
+        // Imprimir la pila
+        System.out.println("Elementos en la pila:");
+        while (!pila.isEmpty()) {
+            System.out.println(pila.pop());
+        }
+    }
+}
